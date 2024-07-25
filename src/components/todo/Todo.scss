@@ -1,0 +1,91 @@
+// Todo.scss
+
+.todo-app {
+    max-width: 64rem; // Tailwind max-w-4xl
+    margin: 2rem auto; // Center and add top margin
+    padding: 1rem;
+    background-color: #f3f4f6; // Tailwind gray-100
+    border-radius: 0.5rem; // Tailwind rounded
+
+    h2 {
+        margin-top: 0.75rem;
+        margin-bottom: 1.5rem;
+        font-size: 1.5rem; // Tailwind text-2xl
+        font-weight: 700; // Tailwind font-bold
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .input-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+
+        input {
+            flex-grow: 1;
+            padding: 0.5rem;
+            border-bottom: 2px solid #d1d5db; // Tailwind gray-300
+            outline: none;
+            transition: border-color 0.3s;
+
+            &:focus {
+                border-color: #3b82f6; // Tailwind blue-500
+            }
+        }
+
+        button {
+            margin-left: 1rem;
+            padding: 0.5rem;
+            background-color: #3b82f6; // Tailwind blue-500
+            color: white;
+            border-radius: 0.25rem; // Tailwind rounded
+            transition: background-color 0.3s;
+            outline: none;
+
+            &:hover {
+                background-color: #2563eb; // Tailwind blue-600
+            }
+        }
+    }
+
+    .search-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+
+        input {
+            flex-grow: 1;
+            padding: 0.5rem;
+            border-bottom: 2px solid #d1d5db; // Tailwind gray-300
+            outline: none;
+            transition: border-color 0.3s;
+
+            &:focus {
+                border-color: #3b82f6; // Tailwind blue-500
+            }
+        }
+
+        button {
+            margin-left: 1rem;
+            padding: 0.5rem;
+            background-color: #3b82f6; // Tailwind blue-500
+            color: white;
+            border-radius: 0.25rem; // Tailwind rounded
+            transition: background-color 0.3s;
+            outline: none;
+
+            &:hover {
+                background-color: #2563eb; // Tailwind blue-600
+            }
+        }
+    }
+
+    @media (min-width: 640px) {
+
+        // Tailwind sm breakpoint
+        .flex-row {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}

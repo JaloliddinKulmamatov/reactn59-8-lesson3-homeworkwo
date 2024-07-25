@@ -1,0 +1,33 @@
+.filter-buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    select {
+        font-size: 0.875rem;
+        padding: 0.25rem 0.5rem; 
+        border-radius: 0.25rem;
+        border: 1px solid #d1d5db;
+        outline: none;
+        transition: border-color 0.3s;
+
+        &:focus {
+            border-color: #3b82f6; 
+        }
+    }
+
+    button {
+        font-size: 0.875rem;
+        padding: 0.25rem 0.5rem; 
+        background-color: #a855f7;
+        color: white;
+        border-radius: 0.25rem;
+        margin-left: 0.5rem; 
+        transition: background-color 0.3s;
+        outline: none;
+
+        &:hover {
+            background-color: #9333ea;
+        }
+    }
+}

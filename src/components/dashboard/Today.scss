@@ -1,0 +1,23 @@
+.today {
+    display: flex;
+    gap: 20px;
+    h2  {
+        margin-bottom: 10px;
+    }
+    .todayDo {
+        width: 80%;
+        border: 1px solid;
+        padding: 20px;
+        border-radius: 10px;
+        form {
+            div {
+                display: flex;
+                border-bottom:1px solid #a0a0a0;
+                padding:10px 0;
+                input {
+                    border: none;
+                }
+            }
+        }
+    }
+}

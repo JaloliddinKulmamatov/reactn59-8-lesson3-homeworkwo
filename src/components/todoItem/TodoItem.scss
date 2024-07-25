@@ -1,0 +1,59 @@
+// TodoItem.scss
+
+.todo-item {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid #e5e7eb; // Tailwind gray-200
+    gap: 1rem;
+
+    @media (min-width: 640px) {
+        // Tailwind sm breakpoint
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .todo-index {
+        margin-right: 1rem;
+        color: #6b7280; // Tailwind gray-500
+    }
+
+    .todo-text {
+        margin-right: 1rem;
+
+        &.completed {
+            text-decoration: line-through;
+            color: #6b7280; // Tailwind gray-500
+        }
+    }
+
+    .button-group {
+        display: flex;
+        gap: 0.75rem;
+        margin-left: 2rem;
+
+        .button {
+            font-size: 0.875rem; // Tailwind text-sm
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem; // Tailwind rounded
+            color: #fff;
+
+            &.toggle {
+                background-color: #3b82f6; // Tailwind blue-500
+            }
+
+            &.remove {
+                background-color: #ef4444; // Tailwind red-500
+            }
+
+            &.mark-completed {
+                background-color: #10b981; // Tailwind green-500
+            }
+
+            &.mark-incomplete {
+                background-color: #f59e0b; // Tailwind yellow-500
+            }
+        }
+    }
+}

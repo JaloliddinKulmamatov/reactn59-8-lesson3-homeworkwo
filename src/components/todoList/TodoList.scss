@@ -1,0 +1,24 @@
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    li {
+        margin: 0.5rem 0;
+        font-size: 0.875rem;
+        font-style: italic;
+        display: flex;
+
+        &.my-2 {
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        &.text-sm {
+            font-size: 0.875rem;
+        }
+
+        &.italic {
+            font-style: italic;
+        }
+    }
+}
